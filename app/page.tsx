@@ -126,7 +126,7 @@ export default function Home() {
 				<p className="font-normal text-base sm:text-[28px] sm:max-w-[900px] sm:leading-12 text-center text-dark">
 					We offer a balanced curriculum that combines core subjects with
 					creative learning. From literacy and numeracy to art, music, and moral
-					instruction, our goal is to nurture every aspect of your child’s
+					instruction, our goal is to nurture every aspect of your child&apos;s
 					development — academically, socially, and emotionally.
 				</p>
 				<Link href={"/contact"}>
@@ -134,32 +134,34 @@ export default function Home() {
 						Get in Touch
 					</button>
 				</Link>
-				<div className="overflow-x-scroll w-full flex items-center sm:justify-center space-x-2 sm:space-x-10">
-					<div className="relative h-[300px] w-[259px]">
-						<Image
-							alt=""
-							src={"/snksn32ewjndw.svg"}
-							className="object-cover"
-							fill
-						/>
+				{/* <div className="w-full overflow-x-auto">
+					<div className="flex items-center justify-start sm:justify-center space-x-2 sm:space-x-10 px-4 sm:px-0 min-w-min">
+						<div className="relative h-[300px] w-[259px] flex-shrink-0">
+							<Image
+								alt=""
+								src={"/snksn32ewjndw.svg"}
+								className="object-cover"
+								fill
+							/>
+						</div>
+						<div className="relative h-[300px] w-[259px] flex-shrink-0">
+							<Image
+								alt=""
+								src={"/qabhbknk3.svg"}
+								className="object-cover object-center"
+								fill
+							/>
+						</div>
+						<div className="relative h-[300px] w-[259px] flex-shrink-0">
+							<Image
+								alt=""
+								src={"/ajlhbhjabhjb4.svg"}
+								className="object-cover"
+								fill
+							/>
+						</div>
 					</div>
-					<div className="relative h-[300px] w-[259px]">
-						<Image
-							alt=""
-							src={"/qabhbknk3.svg"}
-							className="object-cover object-center"
-							fill
-						/>
-					</div>
-					<div className="relative h-[300px] w-[259px]">
-						<Image
-							alt=""
-							src={"/ajlhbhjabhjb4.svg"}
-							className="object-cover"
-							fill
-						/>
-					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

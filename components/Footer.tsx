@@ -37,7 +37,7 @@ const Footer = () => {
 				{/* <div className="relative -mt-1 h-[80px] w-full">
 					<Image src={"/amp-bottom-m.svg"} alt="top" fill className="" />
 				</div> */}
-				<div className="flex flex-col items-center justify-center space-y-11 px-6">
+				<div className="flex flex-col pt-20 items-center justify-center space-y-11 px-6">
 					<Link href={"/"} className="flex items-center space-x-4">
 						<Image
 							alt="Tarem Schools logo"
