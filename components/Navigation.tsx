@@ -1,8 +1,13 @@
+"use client";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navigation = () => {
+	const pathName = usePathname();
+
 	return (
 		<div className="bg-dark text-white py-8 px-2 sm:px-14">
 			<div className="flex items-center space-x-10 sm:space-x-20">
@@ -17,14 +22,14 @@ const Navigation = () => {
 						Tarem <br /> Schools
 					</h2>
 				</Link>
-				<ul className="flex space-x-5 sm:space-x-10 [&>li]:font-medium [&>li]:text-base sm:[&>li]:text-2xl">
-					<li>
+				<ul className="flex space-x-5 sm:space-x-10 [&>li]:text-base sm:[&>li]:text-2xl">
+					<li className={cn({ "font-bold": pathName === "/" })}>
 						<Link href={"/"}>Home</Link>
 					</li>
-					<li>
+					<li className={cn({ "font-bold": pathName === "/about" })}>
 						<Link href={"/about"}>About</Link>
 					</li>
-					<li>
+					<li className={cn({ "font-bold": pathName === "/contact" })}>
 						<Link href={"/contact"}>Contact Us</Link>
 					</li>
 				</ul>

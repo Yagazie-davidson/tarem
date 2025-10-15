@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const jost = Jost({
 	subsets: ["latin"],
+});
+
+export const howdy = localFont({
+	src: [
+		{ path: "../public/fonts/Howdybun.otf", weight: "400", style: "normal" },
+		{ path: "../public/fonts/Howdybun.ttf", weight: "400", style: "normal" },
+	],
+	display: "swap",
 });
 
 export const metadata: Metadata = {

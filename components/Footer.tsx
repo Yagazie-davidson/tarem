@@ -14,8 +14,8 @@ const Footer = () => {
 					always happy to help. Send us an email and we’ll get back to you as
 					soon as possible!
 				</p>
-				<div className="bg-white h-[176px] mx-3 rounded-[349px] flex flex-col space-y-6 justify-center items-center w-full">
-					<p className="text-[#909090] font-normal text-base">
+				<div className="bg-white  py-14 mx-3 rounded-[349px] flex flex-col space-y-6 justify-center items-center w-full">
+					<p className="text-[#909090] font-normal text-base sm:text-[32px]">
 						What is your Question?
 					</p>
 					<Link href={"/contact"}>
@@ -34,9 +34,9 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="bg-white text-dark pb-16">
-				<div className="relative -mt-1 h-[80px] w-full">
+				{/* <div className="relative -mt-1 h-[80px] w-full">
 					<Image src={"/amp-bottom-m.svg"} alt="top" fill className="" />
-				</div>
+				</div> */}
 				<div className="flex flex-col items-center justify-center space-y-11 px-6">
 					<Link href={"/"} className="flex items-center space-x-4">
 						<Image

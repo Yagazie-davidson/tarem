@@ -135,10 +135,30 @@ export default function Home() {
 					</button>
 				</Link>
 				<div className="overflow-x-scroll w-full flex items-center sm:justify-center space-x-2 sm:space-x-10">
-					<Image alt="" src={"/snksn32ewjndw.svg"} width={179} height={260} />
-
-					<Image alt="" src={"/qabhbknk3.svg"} width={179} height={260} />
-					<Image alt="" src={"/ajlhbhjabhjb4.svg"} width={179} height={260} />
+					<div className="relative h-[300px] w-[259px]">
+						<Image
+							alt=""
+							src={"/snksn32ewjndw.svg"}
+							className="object-cover"
+							fill
+						/>
+					</div>
+					<div className="relative h-[300px] w-[259px]">
+						<Image
+							alt=""
+							src={"/qabhbknk3.svg"}
+							className="object-cover object-center"
+							fill
+						/>
+					</div>
+					<div className="relative h-[300px] w-[259px]">
+						<Image
+							alt=""
+							src={"/ajlhbhjabhjb4.svg"}
+							className="object-cover"
+							fill
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
