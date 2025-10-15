@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Link from "next/link";
+import Image from "next/image";
 
 const jost = Jost({
 	subsets: ["latin"],
@@ -33,6 +35,19 @@ export default function RootLayout({
 			<body className={`${jost.className}`}>
 				<Navigation />
 				{children}
+				<Link
+					href={"https://wa.me/2348150502317"}
+					target="_blank"
+					className="fixed md:bottom-28 z-50 bottom-16 right-4 md:right-10 font-bold text-5xl bg-white rounded-full h-12 w-12 flex justify-center items-center"
+				>
+					<Image
+						alt="whatsapp link"
+						src={"/whatsapp.svg"}
+						height={30}
+						width={30}
+						className="text-light"
+					/>
+				</Link>
 				<Footer />
 			</body>
 		</html>
